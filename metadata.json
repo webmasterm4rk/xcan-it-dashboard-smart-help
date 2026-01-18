@@ -1,0 +1,7 @@
+{
+  "name": "Xcan It Voice Agent",
+  "description": "A helpful onboarding voice assistant for the Xcan It platform.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
