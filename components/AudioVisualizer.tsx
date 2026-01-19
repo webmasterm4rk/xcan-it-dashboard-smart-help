@@ -12,7 +12,8 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = ({
   barColor = '#3b82f6' 
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  // Fixed: Initialize useRef with null to satisfy TypeScript requirements
+  const animationRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
